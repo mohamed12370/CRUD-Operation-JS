@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURD</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter Product Name" />
+            <label for="price">Price:</label>
+            <input id="price" type="number" placeholder="Enter Product price" />
+            <label for="cat">Categroy:</label>
+            <select id="cat">
+          <option value="pro 1">pro 1</option>
+          <option value="pro 2">pro 2</option>
+          <option value="pro 3">pro 3</option>
+        </select>
+            <label for="desc">Descripation:</label>
+            <input id="desc" type="text" placeholder="Enter Product descripation" />
+            <button id="add" class="add">Add</button>
+        </div>
+    </header>
+
+    <section class="search">
+        <div class="container">
+            <div>
+                <label for="cat">Categroy:</label>
+                <select id="catergoy">
+            <option value="all">All</option>
+            <option value="pro 1">pro 1</option>
+            <option value="pro 2">pro 2</option>
+            <option value="pro 3">pro 3</option>
+          </select>
+            </div>
+            <div>
+                <input id="search" type="search" placeholder="search" />
+            </div>
+        </div>
+    </section>
+
+    <section class="show">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>descripation</th>
+                        <th>Categroy</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="ineer"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
